@@ -1,6 +1,6 @@
- let currenttab=0;
- showform(currenttab);
-function showform(n){
+ let currentTab=0;
+ ShowForm(currentTab);
+function ShowForm(n){
     var form=document.getElementsByClassName('form');
     form[n].style.display='flex';
 
@@ -27,19 +27,19 @@ var move=document.getElementsByClassName('nav-btns') ;
  move[i].addEventListener('click',function nextTab(n){
     
     var form =document.getElementsByClassName('form');
-    if(n==0 && !validateform()) return false;
-    form[currenttab].style.display='none';
-    currenttab= currenttab+1;
+    if(n==0 && !validateForm()) return false;
+    form[currentTab].style.display='none';
+    currentTab= currentTab+1;
 
-    if(currenttab>=form.length){
+    if(currentTab>=form.length){
         document.getElementById('donationform').submit();
         return false;
     }
-    showform(currenttab);
+    ShowForm(currentTab);
 });
  }
 
-function validateform(){
+function validateForm(){
     var form,input,i=true;
     var form=document.getElementsByClassName('form');
     var input= document.getElementsByTagName('input');
@@ -50,7 +50,7 @@ function validateform(){
     }
     }
     if(valid){
-        document.getElementsByClassName('check')[currenttab].className+='completed';
+        document.getElementsByClassName('check')[currentTab].className+='completed';
     }
     return valid;
 }
