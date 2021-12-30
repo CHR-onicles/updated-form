@@ -91,6 +91,7 @@ background-color: blueviolet;
     border-radius: 5px;
     background-color: white;
     text-align: center;
+    
 
 }
 .check::after {
@@ -102,22 +103,17 @@ background-color: blueviolet;
     position: absolute;
        content: "";
        height: 2px;
+
+       
        
        
        
        
 }
-.check:last-child ::after {
-    display: none;
-    /* width: 6px;
-    height: 2px;
-    margin-left: 8px;
-    margin-top: 10px;
-    background-color: white;
-    position: absolute;
-       content: "";
-       height: 2px; */
-       
+.progress-stage:last-child ::after {
+    width: 0px;
+
+    
 }
 .stage{
     font-size: 0.5em;
