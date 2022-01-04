@@ -1,5 +1,4 @@
 let currentTab = 0;
-
 ShowForm(currentTab);
 
 function ShowForm(n) {
